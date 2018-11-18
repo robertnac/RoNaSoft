@@ -1,0 +1,17 @@
+spring:
+  profiles: profileOne
+  
+yaml:
+  property: Wert der Property profile One
+  
+---
+
+pring:
+  profiles: profileTwo
+  
+yaml:
+  property: Wert der Property profile Two
+  
+---
+
+ 
