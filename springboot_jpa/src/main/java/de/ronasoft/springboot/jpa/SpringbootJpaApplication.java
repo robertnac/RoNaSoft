@@ -1,4 +1,4 @@
-package de.ronasoft.springboot.springboot_jpa;
+package de.ronasoft.springboot.jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
