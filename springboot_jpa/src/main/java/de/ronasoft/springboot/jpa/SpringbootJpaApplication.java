@@ -29,7 +29,7 @@ public class SpringbootJpaApplication {
 			repository.save(new Kunde("David", "Palmer"));
 			repository.save(new Kunde("Michelle", "Dessler"));
 
-			// fetch all customers
+			// Alle Kunden lesen
 			LOGGER.info("Kunde gefunden mit findAll():");
 			LOGGER.info("-------------------------------");
 			for (Kunde customer : repository.findAll()) {
@@ -37,7 +37,7 @@ public class SpringbootJpaApplication {
 			}
 			LOGGER.info("");
 
-			// fetch an individual customer by ID
+			// Lese einen Kunden ueber seine ID
 			repository.findById(1L).ifPresent(customer -> {
 				LOGGER.info("Kunde gefunden mit findById(1L):");
 				LOGGER.info("--------------------------------");
@@ -45,7 +45,7 @@ public class SpringbootJpaApplication {
 				LOGGER.info("");
 			});
 
-			// fetch customers by last name
+			// Lese Kunden ueber die Namen
 			LOGGER.info("Kunde gefunden mit findByLastName('Bauer'):");
 			LOGGER.info("--------------------------------------------");
 			repository.findByNachname("Bauer").forEach(bauer -> {
